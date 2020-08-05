@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextView_333333">
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="TextView_ffffff">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="TextView_666666">
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="TextView_999999">
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="TextView_fefefe">
+        <item name="android:textColor">#fefefe</item>
+    </style>
+
+    <style name="TextView_bluedark">
+        <item name="android:textColor">#333333</item>
+    </style>
+    <!--===================================================================================================================-->
+    <style name="TextView_333333_10size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_10</item>
+    </style>
+
+    <style name="TextView_333333_11size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_11</item>
+    </style>
+
+    <style name="TextView_333333_12size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_12</item>
+    </style>
+
+    <style name="TextView_333333_13size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_13</item>
+    </style>
+
+    <style name="TextView_333333_14size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_14</item>
+    </style>
+
+    <style name="TextView_333333_15size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_15</item>
+    </style>
+
+    <style name="TextView_333333_16size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_16</item>
+    </style>
+
+    <style name="TextView_333333_17size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_17</item>
+    </style>
+
+    <style name="TextView_333333_18size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_18</item>
+    </style>
+
+    <style name="TextView_333333_19size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_19</item>
+    </style>
+
+    <style name="TextView_333333_20size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_20</item>
+    </style>
+
+    <style name="TextView_333333_21size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_21</item>
+    </style>
+
+    <style name="TextView_333333_22size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_22</item>
+    </style>
+
+    <style name="TextView_333333_23size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_23</item>
+    </style>
+
+    <style name="TextView_333333_24size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_24</item>
+    </style>
+
+    <style name="TextView_333333_25size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_25</item>
+    </style>
+
+    <style name="TextView_333333_26size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_26</item>
+    </style>
+
+    <style name="TextView_333333_27size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_27</item>
+    </style>
+
+    <style name="TextView_333333_28size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_28</item>
+    </style>
+
+    <style name="TextView_333333_29size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_29</item>
+    </style>
+
+    <style name="TextView_333333_30size" parent="TextView_333333">
+        <item name="android:textSize">@dimen/textsize_30</item>
+    </style>
+    <!--===================================================================================================================-->
+    <style name="TextView_ffffff_10size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_10</item>
+    </style>
+
+    <style name="TextView_ffffff_11size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_11</item>
+    </style>
+
+    <style name="TextView_ffffff_12size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_12</item>
+    </style>
+
+    <style name="TextView_ffffff_13size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_13</item>
+    </style>
+
+    <style name="TextView_ffffff_14size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_14</item>
+    </style>
+
+    <style name="TextView_ffffff_15size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_15</item>
+    </style>
+
+    <style name="TextView_ffffff_16size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_16</item>
+    </style>
+
+    <style name="TextView_ffffff_17size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_17</item>
+    </style>
+
+    <style name="TextView_ffffff_18size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_18</item>
+    </style>
+
+    <style name="TextView_ffffff_19size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_19</item>
+    </style>
+
+    <style name="TextView_ffffff_20size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_20</item>
+    </style>
+
+    <style name="TextView_ffffff_21size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_21</item>
+    </style>
+
+    <style name="TextView_ffffff_22size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_22</item>
+    </style>
+
+    <style name="TextView_ffffff_23size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_23</item>
+    </style>
+
+    <style name="TextView_ffffff_24size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_24</item>
+    </style>
+
+    <style name="TextView_ffffff_25size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_25</item>
+    </style>
+
+    <style name="TextView_ffffff_26size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_26</item>
+    </style>
+
+    <style name="TextView_ffffff_27size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_27</item>
+    </style>
+
+    <style name="TextView_ffffff_28size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_28</item>
+    </style>
+
+    <style name="TextView_ffffff_29size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_29</item>
+    </style>
+
+    <style name="TextView_ffffff_30size" parent="TextView_ffffff">
+        <item name="android:textSize">@dimen/textsize_30</item>
+    </style>
+    <!--===================================================================================================================-->
+    <style name="TextView_666666_10size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_10</item>
+    </style>
+
+    <style name="TextView_666666_11size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_11</item>
+    </style>
+
+    <style name="TextView_666666_12size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_12</item>
+    </style>
+
+    <style name="TextView_666666_13size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_13</item>
+    </style>
+
+    <style name="TextView_666666_14size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_14</item>
+    </style>
+
+    <style name="TextView_666666_15size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_15</item>
+    </style>
+
+    <style name="TextView_666666_16size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_16</item>
+    </style>
+
+    <style name="TextView_666666_17size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_17</item>
+    </style>
+
+    <style name="TextView_666666_18size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_18</item>
+    </style>
+
+    <style name="TextView_666666_19size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_19</item>
+    </style>
+
+    <style name="TextView_666666_20size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_20</item>
+    </style>
+
+    <style name="TextView_666666_21size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_21</item>
+    </style>
+
+    <style name="TextView_666666_22size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_22</item>
+    </style>
+
+    <style name="TextView_666666_23size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_23</item>
+    </style>
+
+    <style name="TextView_666666_24size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_24</item>
+    </style>
+
+    <style name="TextView_666666_25size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_25</item>
+    </style>
+
+    <style name="TextView_666666_26size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_26</item>
+    </style>
+
+    <style name="TextView_666666_27size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_27</item>
+    </style>
+
+    <style name="TextView_666666_28size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_28</item>
+    </style>
+
+    <style name="TextView_666666_29size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_29</item>
+    </style>
+
+    <style name="TextView_666666_30size" parent="TextView_666666">
+        <item name="android:textSize">@dimen/textsize_30</item>
+    </style>
+    <!--===================================================================================================================-->
+    <style name="TextView_999999_10size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_10</item>
+    </style>
+
+    <style name="TextView_999999_11size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_11</item>
+    </style>
+
+    <style name="TextView_999999_12size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_12</item>
+    </style>
+
+    <style name="TextView_999999_13size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_13</item>
+    </style>
+
+    <style name="TextView_999999_14size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_14</item>
+    </style>
+
+    <style name="TextView_999999_15size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_15</item>
+    </style>
+
+    <style name="TextView_999999_16size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_16</item>
+    </style>
+
+    <style name="TextView_999999_17size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_17</item>
+    </style>
+
+    <style name="TextView_999999_18size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_18</item>
+    </style>
+
+    <style name="TextView_999999_19size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_19</item>
+    </style>
+
+    <style name="TextView_999999_20size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_20</item>
+    </style>
+
+    <style name="TextView_999999_21size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_21</item>
+    </style>
+
+    <style name="TextView_999999_22size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_22</item>
+    </style>
+
+    <style name="TextView_999999_23size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_23</item>
+    </style>
+
+    <style name="TextView_999999_24size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_24</item>
+    </style>
+
+    <style name="TextView_999999_25size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_25</item>
+    </style>
+
+    <style name="TextView_999999_26size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_26</item>
+    </style>
+
+    <style name="TextView_999999_27size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_27</item>
+    </style>
+
+    <style name="TextView_999999_28size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_28</item>
+    </style>
+
+    <style name="TextView_999999_29size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_29</item>
+    </style>
+
+    <style name="TextView_999999_30size" parent="TextView_999999">
+        <item name="android:textSize">@dimen/textsize_30</item>
+    </style>
+    <!--===================================================================================================================-->
+    <style name="TextView_fefefe_10size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_10</item>
+    </style>
+
+    <style name="TextView_fefefe_11size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_11</item>
+    </style>
+
+    <style name="TextView_fefefe_12size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_12</item>
+    </style>
+
+    <style name="TextView_fefefe_13size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_13</item>
+    </style>
+
+    <style name="TextView_fefefe_14size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_14</item>
+    </style>
+
+    <style name="TextView_fefefe_15size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_15</item>
+    </style>
+
+    <style name="TextView_fefefe_16size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_16</item>
+    </style>
+
+    <style name="TextView_fefefe_17size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_17</item>
+    </style>
+
+    <style name="TextView_fefefe_18size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_18</item>
+    </style>
+
+    <style name="TextView_fefefe_19size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_19</item>
+    </style>
+
+    <style name="TextView_fefefe_20size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_20</item>
+    </style>
+
+    <style name="TextView_fefefe_21size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_21</item>
+    </style>
+
+    <style name="TextView_fefefe_22size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_22</item>
+    </style>
+
+    <style name="TextView_fefefe_23size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_23</item>
+    </style>
+
+    <style name="TextView_fefefe_24size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_24</item>
+    </style>
+
+    <style name="TextView_fefefe_25size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_25</item>
+    </style>
+
+    <style name="TextView_fefefe_26size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_26</item>
+    </style>
+
+    <style name="TextView_fefefe_27size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_27</item>
+    </style>
+
+    <style name="TextView_fefefe_28size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_28</item>
+    </style>
+
+    <style name="TextView_fefefe_29size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_29</item>
+    </style>
+
+    <style name="TextView_fefefe_30size" parent="TextView_fefefe">
+        <item name="android:textSize">@dimen/textsize_30</item>
+    </style>
+    <!--===================================================================================================================-->
+    <style name="TextView_bluedark_10size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_10</item>
+    </style>
+
+    <style name="TextView_bluedark_11size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_11</item>
+    </style>
+
+    <style name="TextView_bluedark_12size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_12</item>
+    </style>
+
+    <style name="TextView_bluedark_13size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_13</item>
+    </style>
+
+    <style name="TextView_bluedark_14size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_14</item>
+    </style>
+
+    <style name="TextView_bluedark_15size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_15</item>
+    </style>
+
+    <style name="TextView_bluedark_16size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_16</item>
+    </style>
+
+    <style name="TextView_bluedark_17size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_17</item>
+    </style>
+
+    <style name="TextView_bluedark_18size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_18</item>
+    </style>
+
+    <style name="TextView_bluedark_19size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_19</item>
+    </style>
+
+    <style name="TextView_bluedark_20size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_20</item>
+    </style>
+
+    <style name="TextView_bluedark_21size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_21</item>
+    </style>
+
+    <style name="TextView_bluedark_22size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_22</item>
+    </style>
+
+    <style name="TextView_bluedark_23size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_23</item>
+    </style>
+
+    <style name="TextView_bluedark_24size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_24</item>
+    </style>
+
+    <style name="TextView_bluedark_25size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_25</item>
+    </style>
+
+    <style name="TextView_bluedark_26size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_26</item>
+    </style>
+
+    <style name="TextView_bluedark_27size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_27</item>
+    </style>
+
+    <style name="TextView_bluedark_28size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_28</item>
+    </style>
+
+    <style name="TextView_bluedark_29size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_29</item>
+    </style>
+
+    <style name="TextView_bluedark_30size" parent="TextView_bluedark">
+        <item name="android:textSize">@dimen/textsize_30</item>
+    </style>
+    <!--===================================================================================================================-->
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <!--            <ProgressBar-->
+    <!--                android:id="@+id/progressbar"-->
+    <!--                android:layout_width="@dimen/space_45"-->
+    <!--                android:layout_height="@dimen/space_45"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:indeterminateTint="@color/white"-->
+    <!--                android:progress="50"/>-->
+    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progress"
+        style="@style/SpinKitView.ThreeBounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        app:SpinKit_Color="@color/loadlayout_loading_color" />
+</FrameLayout>

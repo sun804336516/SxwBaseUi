@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="blue_light">#00B5FF</color>
+    <color name="gray">#f6f6f6</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="red">#ff0000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_04">#0affffff</color>
+    <color name="white_06">#0fffffff</color>
+    <color name="white_10">#19ffffff</color>
+    <color name="white_20">#33ffffff</color>
+    <color name="white_30">#4cffffff</color>
+    <color name="white_40">#66ffffff</color>
+    <color name="white_50">#7fffffff</color>
+    <color name="white_60">#99ffffff</color>
+    <color name="white_70">#B2ffffff</color>
+    <color name="white_75">#bfffffff</color>
+    <color name="white_80">#CCffffff</color>
+    <color name="white_85">#d9ffffff</color>
+
+    <color name="black">#000000</color>
+    <color name="black_03">#07000000</color>
+    <color name="black_04">#0a000000</color>
+    <color name="black_10">#19000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_30">#4c000000</color>
+    <color name="black_40">#66000000</color>
+    <color name="black_50">#7f000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_70">#B2000000</color>
+    <color name="black_75">#Bf000000</color>
+    <color name="black_80">#CC000000</color>
+    <color name="light_transparent">#16000000</color>
+    <color name="dark_transparent">#24000000</color>
+
+
+    <color name="line_color">#66ffffff</color>
+
+    <color name="_333333">#333333</color>
+    <color name="_666666">#666666</color>
+    <color name="_999999">#999999</color>
+    <color name="select_color">#00c3e2</color>
+
+    <!--列表中醒目项-->
+    <color name="light_blue">#00c3e2</color>
+
+    <color name="attend_mode_line">#284b79</color>
+
+
+    <color name="chunk_color">#33ffffff</color>
+
+    <color name="tablayout_textcolor">#ffffff</color>
+    <color name="tablayout_SelectedTextColor">#ffffff</color>
+
+    <color name="color_screenpopwindow_bg">#ffffff</color>
+
+    <color name="progressbgcolor">#4c000000</color>
+    <color name="progresscolor">#00c3e2</color>
+
+<!--    pwdView-->
+    <color name="pass_view_rect_input">#3DA3FF</color>
+    <color name="regi_line_color">#c8c8c8</color>
+<!--    pwdView-->
+
+    <color name="loadlayout_empty_color">#333333</color>
+    <color name="loadlayout_error_color">#ff0000</color>
+    <color name="loadlayout_loading_color">#333333</color>
+
+
+</resources>

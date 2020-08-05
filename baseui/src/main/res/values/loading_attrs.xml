@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="styleLoadingLayout" format="reference"/>
+    <declare-styleable name="LoadingLayout">
+        <attr name="llEmptyResId" format="reference"/>
+        <attr name="llLoadingResId" format="reference"/>
+        <attr name="llErrorResId" format="reference"/>
+        <attr name="llEmptyImage" format="reference"/>
+        <attr name="llEmptyText" format="string"/>
+        <attr name="llErrorImage" format="reference"/>
+        <attr name="llErrorText" format="string"/>
+        <attr name="llRetryText" format="string"/>
+    </declare-styleable>
+
+</resources>

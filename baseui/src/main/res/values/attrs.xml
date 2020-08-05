@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="WheelView">
+        <attr name="itemVisibleNum" format="integer" />
+
+        <attr name="textColorOuter" format="color" />
+        <attr name="textSizeOuter" format="dimension" />
+        <attr name="textColorCenter" format="color" />
+        <attr name="textSizeCenter" format="dimension" />
+
+        <attr name="lineColor" format="color" />
+
+        <attr name="isLoop" format="boolean" />
+        <attr name="lineSpaceingDimens" format="dimension" />
+
+        <attr name="wheelGravity" format="enum">
+            <enum name="left" value="234" />
+            <enum name="center" value="354" />
+            <enum name="right" value="894" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="SuperImageView">
+        <attr name="type">
+            <enum name="round" value="1"></enum>
+            <enum name="circle" value="2"></enum>
+            <enum name="oval" value="3"></enum>
+        </attr>
+        <attr name="round_radius" format="dimension|reference" />
+        <attr name="tl_radius" format="dimension|reference" />
+        <attr name="tr_radius" format="dimension|reference" />
+        <attr name="bl_radius" format="dimension|reference" />
+        <attr name="br_radius" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="VerticalSeekBar">
+        <attr name="seekBarRotation">
+            <!-- Clock wise - 90 deg; top = min, bottom = max -->
+            <enum name="CW90" value="90" />
+            <!-- Clock wise - 270 deg; bottom = min, top = max -->
+            <enum name="CW270" value="270" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="LabelView">
+        <!-- 设置文字内容 -->
+        <attr name="lv_text" format="string" />
+        <!-- 设置文字颜色,默认#ffffff -->
+        <attr name="lv_text_color" format="color" />
+        <!-- 设置文字大小,默认11sp -->
+        <attr name="lv_text_size" format="dimension" />
+        <!-- 设置文字是否支持加粗,默认true -->
+        <attr name="lv_text_bold" format="boolean" />
+        <!-- 设置文字是否支持全部大写,默认true-->
+        <attr name="lv_text_all_caps" format="boolean" />
+        <!-- 设置背景颜色,默认"#FF4081"-->
+        <attr name="lv_background_color" format="color" />
+        <!-- 设置LabelView所在矩形最小宽高,默认mFillTriangle?35dp:50dp-->
+        <attr name="lv_min_size" format="dimension" />
+        <!-- 设置文字上下padding,默认3.5dp,mFillTriangle为true时无效-->
+        <attr name="lv_padding" format="dimension" />
+        <!-- 设置LabelView方向 -->
+        <attr name="lv_gravity" format="enum">
+            <enum name="TOP_LEFT" value="51" />
+            <enum name="TOP_RIGHT" value="53" />
+            <enum name="BOTTOM_LEFT" value="83" />
+            <enum name="BOTTOM_RIGHT" value="85" />
+        </attr>
+        <!-- 设置是否填充三角区域,默认false -->
+        <attr name="lv_fill_triangle" format="boolean" />
+        <!--充满三角形，存在的圆角大小-->
+        <attr name="lv_fill_triangle_degree" format="dimension|reference" />
+        <!-- 设置是否浮嵌显示大小  容器的android:layout_margin="3dp"必须和lv:lv_fill_size="3"值一样-->
+        <attr name="lv_fill_size" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RealtimeBlurView">
+        <attr name="realtimeBlurRadius" format="dimension" />
+        <attr name="realtimeDownsampleFactor" format="float" />
+        <attr name="realtimeOverlayColor" format="color" />
+        <!--圆角-->
+        <attr name="realtimeRadius" format="dimension|reference" />
+        <attr name="realtimeTopLeftRadius" format="dimension|reference" />
+        <attr name="realtimeTopRightRadius" format="dimension|reference" />
+        <attr name="realtimeBottomLeftRadius" format="dimension|reference" />
+        <attr name="realtimeBottomRightRadius" format="dimension|reference" />
+        <attr name="clipPath" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="VerticalTabLayout">
+        <attr name="indicator_color" format="color" />
+        <attr name="indicator_width" format="dimension" />
+        <attr name="indicator_corners" format="dimension" />
+        <attr name="round_corners" format="dimension" />
+        <attr name="indicator_gravity" format="enum">
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+            <enum name="fill" value="119" />
+        </attr>
+        <attr name="tab_margin" format="dimension" />
+        <attr name="tab_mode" format="enum">
+            <enum name="fixed" value="10" />
+            <enum name="scrollable" value="11" />
+        </attr>
+        <attr name="tab_height" format="dimension" />
+
+        <attr name="lineindicator_show" format="boolean"></attr>
+        <attr name="lineindicator_color" format="color"></attr>
+        <attr name="lineindicator_width" format="dimension|reference"></attr>
+        <attr name="lineIndicator_height_ratio" format="float"></attr>
+        <attr name="lineIndicator_margin" format="dimension|reference"></attr>
+        <attr name="lineindicator_gravity" format="enum">
+            <enum name="left" value="10"></enum>
+            <enum name="right" value="20"></enum>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="SelectLayout">
+        <attr name="child_background" format="reference"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="ConsecutiveScrollerLayout_Layout">
+        <attr name="layout_isConsecutive" format="boolean" />
+        <attr name="layout_isNestedScroll" format="boolean" />
+        <attr name="layout_isSticky" format="boolean" />
+        <attr name="layout_sticky_toppading" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="custom_banner">
+        <attr name="indicatorGravity" format="enum">
+            <enum name="LEFT" value="1" />
+            <enum name="RIGHT" value="2" />
+            <enum name="CENTER" value="3" />
+        </attr>
+        <attr name="indicatorStyle" format="enum">
+            <enum name="NONE" value="1" />
+            <enum name="NUMBER" value="2" />
+            <enum name="ORDINARY" value="3" />
+        </attr>
+        <attr name="indicatorSelectRes" format="reference" />
+        <attr name="indicatorUnSelectRes" format="reference" />
+        <attr name="indicatorInterval" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PassWordLayoutStyle">
+        <attr name="box_input_color" format="reference" />
+        //输入框输入状态颜色
+        <attr name="box_no_input_color" format="reference" />
+        //输入框未输入状态颜色
+        <attr name="input_line_color" format="reference" />
+        //输入线颜色
+        <attr name="text_input_color" format="reference" />
+        //文本颜色
+        <attr name="interval_width" format="dimension" />
+        //间隔
+        <attr name="item_width" format="dimension" />
+        //子View宽
+        <attr name="item_height" format="dimension" />
+        //子View高
+        <attr name="draw_txt_size" format="dimension" />
+        //文本大小
+        <attr name="draw_box_line_size" format="dimension" />
+        //输入线条大小
+        <attr name="is_show_input_line" format="boolean" />
+        //是否显示输入线
+        <attr name="pass_inputed_type">
+            //密码输入显示内容
+            <flag name="circle" value="0" />
+            <flag name="stars" value="1" />
+            <flag name="text" value="2" />
+        </attr>
+        <attr name="box_draw_type">
+            //密码框形状
+            <flag name="rect" value="0" />
+            <flag name="circle" value="1" />
+            <flag name="line" value="2" />
+        </attr>
+        <attr name="pass_leng">
+            //密码长度 只考虑4 6 8
+            <flag name="four" value="4" />
+            <flag name="six" value="6" />
+            <flag name="eight" value="8" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="LoadingImageView">
+        <attr name="LoadingImageView_src" format="color|reference"></attr>
+    </declare-styleable>
+
+    <!-- 标点转换 -->
+    <declare-styleable name="CBAlignTextView">
+        <attr name="punctuationConvert" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressTextView">
+        <attr name="textsize" format="reference|dimension" />
+        <attr name="originalcolor" format="reference|color" />
+        <attr name="gradientcolor" format="reference|color" />
+        <attr name="progress_round_radius" format="reference|dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="OvalLayout">
+        <attr name="oval_radius" format="dimension|reference">
+
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="IndicatorLayout">
+        <attr name="indicator_SelectRes" format="reference" />
+        <attr name="indicator_UnSelectRes" format="reference" />
+        <attr name="indicator_Interval" format="dimension" />
+    </declare-styleable>
+
+
+</resources>

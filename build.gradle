@@ -1,0 +1,48 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: 'config.gradle'
+
+buildscript {
+    repositories {
+//        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        google()
+        jcenter()
+        mavenCentral()
+
+        maven { url "https://maven.google.com" }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven { url "https://jitpack.io" }
+        maven { url 'https://dl.bintray.com/zouyuhan/maven' }
+        maven { url 'http://4thline.org/m2' }
+//        maven { url "https://maven.google.com" }
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.0'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+        //添加 Sensors Analytics android-gradle-plugin 依赖
+        classpath 'com.sensorsdata.analytics.android:android-gradle-plugin2:2.0.6'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:9.0.0'
+        classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.4'
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url "https://maven.google.com" }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven { url "https://jitpack.io" }
+        maven { url 'https://dl.bintray.com/zouyuhan/maven' }
+        maven { url 'http://4thline.org/m2' }
+
+    }
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sxw.baseui.refreshlayout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sxw.baseui.loading.LoadingLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/loadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.sxw.baseui.view.recyclerview.BaseRecyclerView
+            android:id="@+id/rcv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.sxw.baseui.loading.LoadingLayout>
+</com.sxw.baseui.refreshlayout.SmartRefreshLayout>

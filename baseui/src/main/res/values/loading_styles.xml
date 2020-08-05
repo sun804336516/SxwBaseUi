@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="empty_image" type="id"/>
+    <item name="empty_text" type="id"/>
+    <item name="error_image" type="id"/>
+    <item name="error_text" type="id"/>
+
+    <style name="LoadingLayoutStyle">
+        <item name="llEmptyResId">@layout/loading_layout_vertical_empty</item>
+        <item name="llLoadingResId">@layout/loading_layout_loading</item>
+        <item name="llErrorResId">@layout/loading_layout_vertical_error</item>
+        <item name="llEmptyImage">@null</item>
+        <item name="llErrorImage">@null</item>
+        <item name="llEmptyText">@string/nodata</item>
+        <item name="llErrorText">@string/loaderror</item>
+        <item name="llRetryText">@string/loadfailed</item>
+    </style>
+
+</resources>
