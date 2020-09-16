@@ -72,5 +72,9 @@
     <color name="loadlayout_error_color">#ff0000</color>
     <color name="loadlayout_loading_color">#333333</color>
 
+    <color name="shadow_color">#15333333</color>
+    <color name="shadow_press">#ffffff</color>
+    <color name="shadow_backgroud">#ffffff</color>
+    <color name="shadow_checked">#ffffff</color>
 
 </resources>
