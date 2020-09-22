@@ -8,6 +8,7 @@ import android.graphics.drawable.ShapeDrawable;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.Gravity;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -22,6 +23,7 @@ public class IndicatorLayout extends LinearLayout {
     private Drawable mIndicatorSelectDrawable;
     private Drawable mIndicatorUnSelectDrawable;
     private int mIndicatorInterval;
+    private OnItemClickListener mOnItemClickListener;
 
     public IndicatorLayout(Context context) {
         this(context, null);
@@ -51,6 +53,10 @@ public class IndicatorLayout extends LinearLayout {
 
     }
 
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+        mOnItemClickListener = onItemClickListener;
+    }
+
     public void initIndicator(int count) {
         removeAllViews();
         if (count > 0) {
@@ -59,6 +65,16 @@ public class IndicatorLayout extends LinearLayout {
                 LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
                         ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
                 addView(imageView, lp);
+
+                final int finalI = i;
+                imageView.setOnClickListener(new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (mOnItemClickListener != null) {
+                            mOnItemClickListener.onItemClick(v, finalI);
+                        }
+                    }
+                });
             }
         }
 
@@ -85,5 +101,8 @@ public class IndicatorLayout extends LinearLayout {
         return drawable;
     }
 
+    public interface OnItemClickListener {
+        void onItemClick(View view, int position);
+    }
 
 }
