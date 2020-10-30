@@ -42,7 +42,7 @@ public class PinchImageView extends ImageView {
     /**
      * 图片最大放大比例
      */
-    private static final float MAX_SCALE = 3f;
+    private float MAX_SCALE = 3f;
 
     ////////////////////////////////监听器////////////////////////////////
 
@@ -80,6 +80,10 @@ public class PinchImageView extends ImageView {
 
 
     ////////////////////////////////公共状态获取////////////////////////////////
+
+    public void setMAX_SCALE(float MAX_SCALE) {
+        this.MAX_SCALE = MAX_SCALE;
+    }
 
     /**
      * 手势状态：自由状态
@@ -145,6 +149,7 @@ public class PinchImageView extends ImageView {
         }
         return matrix;
     }
+
 
     /**
      * 获取内部变换矩阵.
