@@ -27,6 +27,8 @@ public class PinchImageView extends ImageView {
 
     ////////////////////////////////配置参数////////////////////////////////
     private float HORIZONTAL_SCAL = 1.0f;
+
+    private float flyMinScale = 1.0f;
     /**
      * 图片缩放动画时间
      */
@@ -40,8 +42,7 @@ public class PinchImageView extends ImageView {
     /**
      * 图片最大放大比例
      */
-    private static final float MAX_SCALE = 2f;
-
+    private static final float MAX_SCALE = 3f;
 
     ////////////////////////////////监听器////////////////////////////////
 
@@ -58,6 +59,12 @@ public class PinchImageView extends ImageView {
      * @see #setOnLongClickListener(View.OnLongClickListener)
      */
     private View.OnLongClickListener mOnLongClickListener;
+
+    private boolean isLunanThink = true;
+
+    public void setLunanThink(boolean lunanThink) {
+        isLunanThink = lunanThink;
+    }
 
     @Override
     public void setOnClickListener(View.OnClickListener l) {
@@ -177,6 +184,10 @@ public class PinchImageView extends ImageView {
 
             float[] floats = new float[9];
             matrix.getValues(floats);
+
+            float maxScale = Math.max(widthPixels * 1.0f / pWid, heightPixels * 1.0f / pHei);
+            flyMinScale = maxScale / MathUtils.getMatrixScale(matrix)[0];
+
             float scale = 1.0f;
             float vW = pWid * 1.0f / pHei;
             float vH = pHei * 1.0f / pWid;
@@ -851,7 +862,16 @@ public class PinchImageView extends ImageView {
         if (action == MotionEvent.ACTION_UP || action == MotionEvent.ACTION_CANCEL) {
             //如果之前是缩放模式,还需要触发一下缩放结束动画
             if (mPinchMode == PINCH_MODE_SCALE) {
-                scaleEnd();
+                if (isLunanThink) {
+                    float outerScale = MathUtils.getMatrixScale(mOuterMatrix)[0];
+                    if (outerScale < flyMinScale) {
+                        scaleEnd();
+                        nextNeedNarrow = false;
+                        lastScale = 1.0f;
+                    }
+                } else {
+                    scaleEnd();
+                }
             }
             mPinchMode = PINCH_MODE_FREE;
         } else if (action == MotionEvent.ACTION_POINTER_UP) {
@@ -1025,11 +1045,21 @@ public class PinchImageView extends ImageView {
         }
         //计算图片从fit center状态到目标状态的缩放比例
         float scale = scaleBase * distance;
+        if (isLunanThink) {
+            if (scale > getMaxScale()) {
+                scale = getMaxScale();
+            } else if (scale < 1.0f) {
+                scale = 1.0f;
+            }
+        }
         Matrix matrix = MathUtils.matrixTake();
         //按照图片缩放中心缩放，并且让缩放中心在缩放点中点上
         matrix.postScale(scale, scale, scaleCenter.x, scaleCenter.y);
         //让图片的缩放中点跟随手指缩放中点
-        matrix.postTranslate(lineCenter.x - scaleCenter.x, lineCenter.y - scaleCenter.y);
+        if (isLunanThink) {
+        } else {
+            matrix.postTranslate(lineCenter.x - scaleCenter.x, lineCenter.y - scaleCenter.y);
+        }
         //应用变换
         mOuterMatrix.set(matrix);
         MathUtils.matrixGiven(matrix);
@@ -1037,6 +1067,9 @@ public class PinchImageView extends ImageView {
         //重绘
         invalidate();
     }
+
+    private boolean nextNeedNarrow = false;
+    private float lastScale = 1.0f;
 
     /**
      * 双击后放大或者缩小
@@ -1075,9 +1108,28 @@ public class PinchImageView extends ImageView {
 //        }
         //开始计算缩放动画的结果矩阵
         Matrix animEnd = MathUtils.matrixTake(mOuterMatrix);
-        //计算还需缩放的倍数
-        animEnd.postScale(nextScale / currentScale, nextScale / currentScale, x, y);
 
+        float realScale = nextScale / currentScale;
+        if (isLunanThink) {
+
+            if (outerScale >= getMaxScale()) {
+                realScale = 1 / outerScale;
+                nextNeedNarrow = false;
+            } else {
+
+                if (nextNeedNarrow) {
+                    realScale = 1 / lastScale;
+                    nextNeedNarrow = false;
+                } else {
+                    realScale = getMaxScale();
+                    nextNeedNarrow = true;
+                    lastScale = realScale;
+                }
+            }
+        } else {
+            //计算还需缩放的倍数
+        }
+        animEnd.postScale(realScale, realScale, x, y);
 
         //控件大小
         float displayWidth = getWidth();
@@ -1110,10 +1162,13 @@ public class PinchImageView extends ImageView {
         }
         //应用修正位置
         animEnd.postTranslate(postX, postY);
+
         //清理当前可能正在执行的动画
         cancelAllAnimator();
         //启动矩阵动画
-        mScaleAnimator = new ScaleAnimator(mOuterMatrix, animEnd);
+        mScaleAnimator = new
+
+                ScaleAnimator(mOuterMatrix, animEnd);
         mScaleAnimator.start();
         //清理临时变量
         MathUtils.rectFGiven(testBound);
@@ -1356,7 +1411,7 @@ public class PinchImageView extends ImageView {
     }
 
 
-    ////////////////////////////////防止内存抖动复用对象////////////////////////////////
+////////////////////////////////防止内存抖动复用对象////////////////////////////////
 
     /**
      * 对象池
@@ -1486,7 +1541,7 @@ public class PinchImageView extends ImageView {
     }
 
 
-    ////////////////////////////////数学计算工具类////////////////////////////////
+////////////////////////////////数学计算工具类////////////////////////////////
 
     /**
      * 数学计算工具类
